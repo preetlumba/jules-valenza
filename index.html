@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jules Valenza</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <style>
+    /* Global Styles */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: #fff;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 40px 80px;
+      background: #111;
+    }
+
+    nav .logo {
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    header {
+      text-align: center;
+      padding: 120px 20px;
+      background: #000;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 0 0 20px 0;
+      font-family: 'Playfair Display', serif;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.8;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 30px;
+      background: #fff;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 4px;
+    }
+
+    section {
+      padding: 120px 80px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #fff;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .about {
+      font-size: 1rem;
+      line-height: 1.6;
+      opacity: 0.8;
+    }
+
+    .collections {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: #111;
+      border-radius: 8px;
+      overflow: hidden;
+      width: calc(33.333% - 20px);
+    }
+
+    .card img {
+      width: 100%;
+      display: block;
+    }
+
+    .card .content {
+      padding: 20px;
+    }
+
+    .card h3 {
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 8px;
+    }
+
+    .philosophy {
+      background: #0f0f0f;
+    }
+
+    footer {
+      padding: 60px;
+      text-align: center;
+      background: #000;
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+
+    /* Media Query for Mobile */
+    @media (max-width: 768px) {
+      nav {
+        padding: 20px;
+      }
+
+      header h1 {
+        font-size: 2.6rem;
+      }
+
+      section {
+        padding: 80px 20px;
+      }
+
+      .collections {
+        flex-direction: column;
+      }
+
+      .card {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">JV — Jules Valenza</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#collections">Collections</a></li>
+      <li><a href="#philosophy">Philosophy</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>JULES VALENZA</h1>
+    <p>Luxury • Masculinity • Timeless Discipline</p>
+    <a href="#collections" class="btn">Explore Collection</a>
+  </header>
+
+  <section id="about">
+    <h2 class="section-title">About the House</h2>
+    <p class="about">Jules Valenza is a modern luxury menswear house built on power, restraint, and elegance. Every piece reflects discipline, confidence, and timeless masculinity. JV is not trend-driven — it is identity-driven.</p>
+  </section>
+
+  <section id="collections">
+    <h2 class="section-title">Signature Collections</h2>
+    <div class="collections">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1520975682031-a4d52c8a4b20?q=80&w=1200" alt="Tailored Wear">
+        <div class="content">
+          <h3>Valenza Tailored</h3>
+          <p>Exquisite tailoring with commanding presence. Classic elegance for the modern gentleman.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?q=80&w=1200" alt="Royal Attire">
+        <div class="content">
+          <h3>Valenza Royale</h3>
+          <p>Regal fabrics, refined silhouettes. For those who embody authority and sophistication.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1520974735194-6c77a14b5f0f?q=80&w=1200" alt="Accessories">
+        <div class="content">
+          <h3>Essentials</h3>
+          <p>Timeless accessories that complete a gentleman’s signature look with subtle luxury.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="philosophy" class="philosophy">
+    <h2 class="section-title">Brand Philosophy</h2>
+    <p class="about">Luxury is silence. Power is control. Jules Valenza exists for men who lead without noise and dominate without excess.</p>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Contact</h2>
+    <p>Business & Collaborations</p>
+    <p style="margin-top:10px;opacity:.7">Email: contact@julesvalenza.com</p>
+  </section>
+
+  <footer>
+    <p>© 2026 Jules Valenza (JV). All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
